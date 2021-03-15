@@ -1,38 +1,70 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  padding-left: 0;
+  margin: 0;
+  color: #dee4e7;
+  background-color: #212121;
+}
+.navbar {
+  height: 100%;
+  width: 360px;
+  min-width: 290px;
+  position: fixed;
+  top: 10;
+  left: 10;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+header {
+  font-size: 40px;
+  background-color: #212121;
+  color: #f0b90b;
+  padding: 10px;
+  position: sticky;
+  top: 0;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.details {
+  margin-left: 380px;
+  margin-right: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.coin {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 17px;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  color: #f638dc;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border-width: 2px;
+  font-size: 15px;
+  border-color: transparent;
+  background: transparent;
+  transition: 0.25s ease;
+  border-style: solid;
+}
+button:hover {
+  color: #fff;
+  background: #f638dc;
+  border-color: #f638dc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  height: 2.5rem;
+  border: 0;
+  color: #2f2f2f;
+  font-size: 20px;
+}
+input[type="search"] {
+  outline: 0;
+  background: #fff;
+  padding: 0 1.6rem;
+  border-radius: 0.7rem;
 }

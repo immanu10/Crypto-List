@@ -1,0 +1,28 @@
+.title {
+  display: flex;
+  align-items: center;
+}
+.title-name {
+  color: #dee4e7;
+}
+.title-symbol {
+  color: #f48fac;
+  font-size: 20px;
+  padding-left: 25px;
+}
+.title-description {
+  text-align: justify;
+}
+span {
+  font-size: 20px;
+  margin-left: 10px;
+  color: #f05454;
+}
+.title-website {
+  color: #f638dc;
+  text-decoration: none;
+}
+a {
+  padding: 10px;
+  font-size: 20px;
+}
