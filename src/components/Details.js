@@ -57,10 +57,19 @@ const Details = ({ id, loading }) => {
             })}
           </ul>
           <p>
-            Website :
             <a
               target="_blank"
               href={info.links.website[0]}
+              className="title-website"
+            >
+              Official Website
+            </a>
+          </p>
+          <p>
+            Read more about :
+            <a
+              target="_blank"
+              href={info.whitepaper.link}
               className="title-website"
             >
               {info.name}
