@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Details.css";
+import Loading from "./ui/Loading";
 
 const months = [
   "January",
@@ -34,7 +35,9 @@ const Details = ({ id, loading }) => {
   return (
     <>
       {isInfoloading || loading ? (
-        <div>...Loading</div>
+        <div className="loading-spinner">
+          <Loading />
+        </div>
       ) : (
         <div>
           <div className="title">

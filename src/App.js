@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Details from "./components/Details";
+import Loading from "./components/ui/Loading";
 import axios from "axios";
 
 function App() {
@@ -44,7 +45,9 @@ function App() {
         </header>
 
         {isloading ? (
-          <div>....Loading</div>
+          <div className="load-spinner">
+            <Loading />
+          </div>
         ) : search ? (
           filterCoins.map((item) => {
             const { id, name, symbol, rank } = item;

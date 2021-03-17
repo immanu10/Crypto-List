@@ -26,3 +26,8 @@ a {
   padding: 10px;
   font-size: 20px;
 }
+.loading-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}

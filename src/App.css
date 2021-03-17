@@ -68,3 +68,6 @@ input[type="search"] {
   padding: 0 1.6rem;
   border-radius: 0.7rem;
 }
+.load-spinner {
+  text-align: center;
+}
